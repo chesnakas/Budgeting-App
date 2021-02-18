@@ -1,0 +1,75 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.listContainer {
+    position: absolute;
+    margin: 10px;
+    width: 380px;
+    height: 580px;
+    border: 1px solid black;
+}
+
+.dashboard {
+    position: absolute;
+    left: 400px;
+    width: 400px;
+    height: 600px;
+}
+
+.numberFields {
+    margin: 10px 10px 10px 0;
+    width: 390px;
+    height: 285px;
+
+    text-align: center;
+    font-family: "helvetica";
+    font-size: 30px;
+    line-height: 70%;
+}
+
+.inputFields {
+    margin: 10px 10px 10px 0;
+    width: 390px;
+    height: 285px;
+}
+
+.fieldsContainer {
+    margin: 50px 0 150px 0;
+    text-align: center;
+}
+
+#budget {
+    color: #00cc00;
+}
+
+#expenses {
+    color: #ff0000
+}
+
+.fas.fa-times {
+    float: right;
+}
+
+#text {
+    display: inline;
+}
+
+#amount {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 10px 30px;
+    font-size: 20px;
+}
