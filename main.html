@@ -4,6 +4,8 @@
         <meta chartset="utf-8">
         <title>Budgeting App</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/be9b3e923d.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -13,25 +15,40 @@
             </div>
             <div class="dashboard">
                 <div class="numberFields">
-                    Budget:
+                    <p>Budget:</p>
                     <p id="budget">0</p>
-                    Expenses:
+                    <p>Expenses:</p>
                     <p id="expenses">0</p>
-                    Remaining:
+                    <p>Remaining:</p>
                     <p id="remaining">0</p>
                 </div>
                 <div class="inputFields">
                     <div class="fieldsContainer">
-                        <label for="budget">Budget: </label>
-                        <input type="number" name="budget" id="budgetInput"><br><br>
-                        <button id="submitBudget">Submit Budget</button>
-                        <br><br>
-                        Add expense:<br><br>
-                        <label for="description">Description:</label>
-                        <input type="text" name="description" id="descriptionInput"><br><br>
-                        <label for="amount">Amount:</label>
-                        <input type="number" name="amount" id="amountInput"><br><br>
-                        <button id="submitExpense">Submit Expense</button>
+                        <table>
+                            <tr>
+                                <td class="tableKey"><label for="budget"><p>Budget:</p></label></td>
+                                <td><input type="number" name="budget" id="budgetInput"></td>
+                            </tr>
+                            <tr>
+                                <td class="tableKey"></td>
+                                <td><button id="submitBudget">Submit Budget</button></td>
+                            </tr>
+                        </table>
+                        <p>Add expense:</p>
+                        <table>
+                            <tr>
+                                <td class="tableKey"><label for="description"><p>Description:</p></label></td>
+                                <td><input type="text" name="description" id="descriptionInput"></td>
+                            </tr>
+                            <tr>
+                                <td class="tableKey"><label for="amount"><p>Amount:</p></label></td>
+                                <td><input type="number" name="amount" id="amountInput"></td>
+                            </tr>
+                            <tr>
+                                <td class="tableKey"></td>
+                                <td><button id="submitExpense">Submit Expense</button></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>

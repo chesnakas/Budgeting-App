@@ -9,13 +9,18 @@ const remaining = document.getElementById("remaining");
 let id = 0;
 
 document.getElementById("submitBudget").addEventListener("click", function(event) {
-    budget.innerHTML = budgetField.value;
-    updateDashboard();
+    if (budgetField.value) {
+        budget.innerHTML = budgetField.value;
+        budgetField.value = "";
+        updateDashboard();
+    }
 });
 
 document.getElementById("submitExpense").addEventListener("click", function(event) {
     if (descField.value && amountField.value) {
         addExpense(descField.value, amountField.value, id);
+        descField.value = "";
+        amountField.value = "";
         updateDashboard();
         id++;
     }
@@ -28,8 +33,8 @@ list.addEventListener("click", function(event) {
 
 function addExpense(description, amount, id) {
     const str = `   <li>
-                        <p id="text">${description},</p>
-                        <p id="amount">${amount}</p>
+                        <p class="text">${description},</p>
+                        <p class="amount">${amount}</p>
                         <i class="fas fa-times" job="delete" id="${id}"></i>
                     </li>`
     list.insertAdjacentHTML("beforeend", str)

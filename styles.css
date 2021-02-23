@@ -1,66 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #F1E0C5;
+}
+
 .container {
     position: relative;
     margin: 0 auto;
-    width: 800px;
+    width: 600px;
     height: 600px;
-    border: 1px solid black;
 }
 
 .listContainer {
     position: absolute;
-    margin: 10px;
-    width: 380px;
-    height: 580px;
-    border: 1px solid black;
+    width: 300px;
+    height: 600px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: #C9B79C;
+    color: white;
 }
 
 .dashboard {
     position: absolute;
-    left: 400px;
-    width: 400px;
+    margin-left: 10px;
+    left: 300px;
+    width: 300px;
     height: 600px;
 }
 
 .numberFields {
-    margin: 10px 10px 10px 0;
-    width: 390px;
-    height: 285px;
+    width: 300px;
+    height: 295px;
+    margin-top: 20px;
 
-    text-align: center;
-    font-family: "helvetica";
-    font-size: 30px;
-    line-height: 70%;
+    font-family: "inter";
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: #C9B79C;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .inputFields {
-    margin: 10px 10px 10px 0;
-    width: 390px;
-    height: 285px;
+    width: 300px;
+    height: 295px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-family: "inter";
+    border-radius: 20px;
+    background: #C9B79C;
+    color: black;
 }
 
 .fieldsContainer {
-    margin: 50px 0 150px 0;
-    text-align: center;
-}
-
-#budget {
-    color: #00cc00;
-}
-
-#expenses {
-    color: #ff0000
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .fas.fa-times {
     float: right;
 }
 
-#text {
+.fas.fa-times:hover {
+    cursor: pointer;
+}
+
+.text {
     display: inline;
 }
 
-#amount {
+.amount {
     display: inline;
+}
+
+.dashboard p {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px 0 5px 0;
 }
 
 ul {
@@ -72,4 +98,29 @@ ul {
 li {
     padding: 10px 30px;
     font-size: 20px;
+    font-family: "inter";
+    color: black;
+}
+
+.tableKey {
+    width: 100px;
+    text-align: right;
+}
+
+/*
+button {
+    color: white;
+    background: #274C77;
+    text-transform: lowercase;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+*/
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    width: 100px;
 }
